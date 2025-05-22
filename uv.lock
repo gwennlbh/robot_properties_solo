@@ -1919,19 +1919,24 @@ name = "robot-properties-solo"
 version = "1.0.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "bullet-utils" },
     { name = "meshcat" },
     { name = "pybullet" },
     { name = "xacro" },
 ]
 
+[package.optional-dependencies]
+simulation = [
+    { name = "bullet-utils" },
+]
+
 [package.metadata]
 requires-dist = [
-    { name = "bullet-utils", git = "https://github.com/machines-in-motion/bullet_utils.git" },
+    { name = "bullet-utils", marker = "extra == 'simulation'", git = "https://github.com/machines-in-motion/bullet_utils.git" },
     { name = "meshcat", specifier = ">=0.3.2" },
     { name = "pybullet", specifier = ">=3.2.7" },
     { name = "xacro", specifier = ">=1.13.3" },
 ]
+provides-extras = ["simulation"]
 
 [[package]]
 name = "setuptools"

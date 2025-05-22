@@ -13,10 +13,14 @@ classifiers = [
 ]
 
 dependencies = [
-    "bullet-utils",
     "meshcat>=0.3.2",
     "pybullet>=3.2.7",
     "xacro>=1.13.3",
+]
+
+[project.optional-dependencies] 
+simulation = [
+    "bullet-utils",
 ]
 
 [project.urls]
