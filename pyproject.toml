@@ -4,6 +4,7 @@ version = "1.0.0"
 description = "Collection of configuration files for the solo robots."
 readme = "readme.md"
 requires-python = ">=3.6"
+license = {file = "LICENSE"}
 maintainers = [{ name = "mnaveau", email = "mnaveau@tuebingen.mpg.de" }]
 classifiers = [
     "Programming Language :: Python :: 3",
