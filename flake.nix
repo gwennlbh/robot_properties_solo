@@ -10,10 +10,7 @@
     systems.follows = "gepetto/systems";
     treefmt-nix.follows = "gepetto/treefmt-nix";
     # TODO: use gepetto/ ?
-    utils = {
-      url = "github:Gepetto/nix-lib";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    utils.url = "github:Gepetto/nix-lib";
   };
 
   outputs =
