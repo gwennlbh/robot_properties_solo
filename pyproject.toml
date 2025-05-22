@@ -1,0 +1,26 @@
+[project]
+name = "robot-properties-solo"
+version = "1.0.0"
+description = "Collection of configuration files for the solo robots."
+readme = "readme.md"
+requires-python = ">=3.6"
+maintainers = [{ name = "mnaveau", email = "mnaveau@tuebingen.mpg.de" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD-3-clause",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "bullet-utils",
+    "meshcat>=0.3.2",
+    "pybullet>=3.2.7",
+    "xacro>=1.13.3",
+]
+
+[project.urls]
+homepage = "https://github.com/open-dynamic-robot-initiative/robot_properties_solo"
+issues = "https://github.com/open-dynamic-robot-initiative/robot_properties_solo/issues"
+
+[tool.uv.sources]
+bullet-utils = { git = "https://github.com/machines-in-motion/bullet_utils.git" }
